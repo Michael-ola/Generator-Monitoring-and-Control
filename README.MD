@@ -4,36 +4,38 @@
 
 ## A device that utilizes Internet of Things Technology to redefine how Generators are used.
 
-## Technologies Used:
+# Technologies Used:
 
-## HTML, CSS, Vanilla JS
+### -Embedded systems
 
-## MYSQL Database
+### -Arduino IDE
 
-## Node JS
+### -HTML, CSS, Vanilla JS
 
-## C++
+### -MYSQL Database
 
-## Arduino IDE
+### -Node JS
+
+### -C++
 
 ## It uses a web application with the following features:
 
-## -Buttons to control the ON/OFF operation of the generator
+### -Buttons to control the ON/OFF operation of the generator
 
-## -A timer interface to control the scheduling of the generator operation e.g. ON after 30 minutes
+### -A timer interface to control the scheduling of the generator operation e.g. ON after 30 minutes
 
-## -A dial gauge that indicates the real-time fuel level of the generator
+### -A dial gauge that indicates the real-time fuel level of the generator
 
-## -A chart of the monthly fuel usage for each year
+### -A chart of the monthly fuel usage for each year
 
 ## It uses a hardware device that comprises of:
 
-## -An arduino ESP32 microcontroller
+### -An arduino ESP32 microcontroller
 
-## -An ultrasonic sensor for fuel level detection
+### -An ultrasonic sensor for fuel level detection
 
-## -A temperature sensor for detecting the temperature of the generator room
+### -A temperature sensor for detecting the temperature of the generator room
 
-## -Relays for controlling large voltage switching
+### -Relays for controlling large voltage switching
 
-## -Buck converter to power the device.
+### -Buck converter to power the device.
