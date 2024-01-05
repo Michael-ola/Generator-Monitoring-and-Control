@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>  
+    <link rel="stylesheet" type="text/css" href="/CSS/profile_page.css"> 
+</head>
+<body>
+   <main>
+   		<div class="container">
+   			<div id="sidebar" class="item">
+                <div id="picture-div" class="sidebar_item"><img id="profile-picture" src="C:\Users\lenovo\Pictures\pics\IMG_20200123_141751_4.jpg"></div>
+                <div class="sidebar_item">Controls</div>
+                <div class="sidebar_item">Status Monitor</div>
+                <div id="logout" class="sidebar_item">Log Out</div>
+   			</div>
+   			<div id="mainpage" class="item">
+                <div id="slide_button"><</div>
+   				<button id="ON">ON</button>
+                <button id="OFF">OFF</button>
+                <div id="TIMER">
+                    <input type="text" id="hours" placeholder="hours">
+                    <input type="text" id="minutes" placeholder="minutes">
+                    <select type="text" id="control">
+                        <option>start</option>
+                        <option>stop</option>
+                    </select>
+                    <button id="save_time_input">OK</button>
+                </div>
+                <select id="plot-year">
+                    <% year.forEach((year)=>{%>
+                        <option><%=year%></option>
+                    <%})%>
+                </select>
+
+                <div>
+                    <canvas id="gauge"></canvas>
+                </div>
+
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+   			</div>
+   		</div>
+   </main>
+   <footer></footer>
+</body>
+
+<script src="/JS/radialgauge.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="/JS/jquery2.js"></script>
+<script type="text/javascript" src="/JS/profile_actions.js"></script>
+</html>

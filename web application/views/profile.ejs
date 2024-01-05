@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/CSS/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="collapse">
+           <div id="span-container">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+        </div>
+    </nav>
+    <section id="under-nav-container">
+            <section id="nav-dropdown">
+                <div id="sign-in"><div>Login/Sign In</div></div>
+                <div id="profile"><div>Profile</div></div>
+                <div id="support"><div>support</div></div>
+            </section>
+            <section id="inner-body">
+                <div id="first-card">
+                        <div id="buttons">
+                            <div id="on-button-container">
+                                <button id="ON" class="btn">ON</button>
+                            </div>
+                            <div id="off-button-container">
+                                <button id="OFF">OFF</button>
+                            </div>
+                        </div>
+                        <div id="gauge-container">
+                                <canvas id="gauge"></canvas>
+                        </div>
+                    </div>
+                    <div id="TIMER">
+                        <div id="timer-container">
+                            <div id="inputs">
+                                <input type="text" id="hours" value="00" style="text-align: right">
+                                <div id="column">
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <input type="text" id="minutes" value="00">
+                                <div id="select-action">
+                                    <button id="start">start</button>  
+                                    <button id="stop">stop</button>
+                                </div>
+                            </div>
+                            <button id="save_time_input">save</button>
+                        </div>
+                    </div>
+                
+                    <div id="container">
+                        <div id="plot-container">
+                            <div id="bar-chart">
+                                <canvas id="myChart" width="90" height="20"></canvas>
+                            </div>
+                            <div id="year-picker">
+                                <select id="plot-year">
+                                        <% year.forEach((year)=>{%>
+                                            <option><div id="year"><%=year%></div></option>
+                                        <%})%>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </section>
+    
+</body>
+<script src="/JS/radialgauge.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="/JS/jquery2.js"></script>
+<script type="text/javascript" src="/JS/utils/navbarLogic.JS"> </script>
+<script type="text/javascript" src="/JS/utils/controlButtons.js"> </script>
+<script type="text/javascript" src="/JS/utils/gaugeDisplayLogic.js"> </script>
+<script type="text/javascript" src="/JS/utils/timeScheduleLogic.js"> </script>
+<script type="text/javascript" src="/JS/utils/barChartLogic.js"> </script>
+<script type="text/javascript" src="/JS/profile.js"></script>
+</html>
