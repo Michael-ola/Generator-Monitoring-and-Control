@@ -2,7 +2,8 @@
 
 # About
 
-## A device that utilizes Internet of Things Technology to redefine how Generators are used.
+## A device that utilizes Internet of Things Technology to redefine how Generators are used, as they are a popular alternative source of power
+##supply for a majority of Africans.
 
 # Technologies Used:
 
